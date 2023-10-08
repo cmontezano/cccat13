@@ -3,6 +3,7 @@ services:
   hyperf-skeleton:
     container_name: hyperf-skeleton
     image: hyperf-skeleton
+    entrypoint: ["php", "bin/hyperf.php", "server:watch"]
     build:
       context: .
     volumes:
